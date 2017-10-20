@@ -18,7 +18,6 @@ def remove_punct(text):
     'goSouTh'
     """
     return ''.join(c for c in text if c not in punctuation)
-    pass # The pass statement does nothing. Replace it with the body of your function.
     
     
 def remove_spaces(text):
@@ -39,7 +38,6 @@ def remove_spaces(text):
     """
     no_spaces = text.strip()
     return no_spaces
-    pass
 
 
 def normalise_input(user_input):
@@ -58,7 +56,6 @@ def normalise_input(user_input):
     c = remove_spaces(b)
     c = c.lower()
     return c
-    pass
 
     
 def display_room(room):
@@ -102,7 +99,6 @@ def exit_leads_to(exits, direction):
     'Reception'
     """
     print('\n' + room["name"].upper() + '\n' + '\n' + room["description"] + '\n')
-    pass
     
 
 def print_menu_line(direction, leads_to):
@@ -119,7 +115,6 @@ def print_menu_line(direction, leads_to):
     Go SOUTH to MJ and Simon's room.
     """
     print( 'Go ' + direction.upper() + ' to ' + leads_to + "." )
-    pass
 
 
 def print_menu(exits):
@@ -167,7 +162,6 @@ def is_valid_exit(exits, user_input):
         return True
     else :
         return False
-    pass
 
 
 def menu(exits):
