@@ -30,7 +30,6 @@ def list_of_items(items):
         if x != (len(items) -1) :
             item_list += ", "
     return item_list
-    pass
 
 
 def print_room_items(room):
@@ -73,7 +72,6 @@ def print_inventory_items(items):
     """
     if items != [] :
         print("You have " + list_of_items(items) + "." + "\n")
-    pass
 
 
 def print_room(room):
@@ -246,7 +244,6 @@ def execute_go(direction):
         current_room = move(current_room["exits"], direction)
     else :
         print("You cannot go there.")
-    pass
 
 
 def execute_take(item_id):
@@ -267,7 +264,6 @@ def execute_take(item_id):
         inventory.append(room_item)
     else :
         print("You cannot take that.")
-    pass
     
 
 def execute_drop(item_id):
@@ -287,7 +283,6 @@ def execute_drop(item_id):
         current_room["items"].append(room_item)
     else :
         print("You cannot drop that.")
-    pass
     
 
 def execute_command(command):
